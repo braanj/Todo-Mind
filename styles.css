@@ -148,10 +148,12 @@ ul {
   width: 100%;
   padding: 20px;
   background-color: var(--dropdown);
-  transition: all 225ms ease-in-out 225ms;
   z-index: 8;
+  opacity: 0;
+  transition: all 225ms ease-in-out 225ms;
 }
 
 .active {
   right: 0;
+  opacity: 1;
 }
