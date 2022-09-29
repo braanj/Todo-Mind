@@ -1,0 +1,157 @@
+:root {
+  --bg-color: #eeeeee;
+  --white: #ffffff71;
+  --dropdown: #fffffff0;
+  --black: #000;
+  --border-color: #ececec;
+  --add: rgb(98, 183, 98);
+  --shadow: rgb(194, 193, 193);
+  --removed: rgba(248, 14, 14, 0.29);
+  --complete: rgba(98, 183, 98, 0.404);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: var(--bg-color);
+  margin: 0;
+  padding: 0;
+  font-family: 'Oswald';
+  position: relative;
+  height: 100%;
+  font-size: 18px;
+  overflow: hidden;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.center {
+  align-self: center;
+}
+
+.flow-right {
+  display: flex;
+  justify-content: space-around;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 500px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  height: calc(100%);
+  position: relative;
+}
+
+.title,
+.controls,
+.button {
+  flex: none;
+  flex-wrap: wrap;
+}
+
+.title {
+  font-family: 'Rubik Dirt';
+  font-size: 200%;
+}
+
+.button {
+  padding: 2px 10px;
+  font-family: 'Oswald';
+  cursor: pointer;
+}
+.content {
+  padding: 0 20px;
+  overflow-y: auto;
+  background-color: var(--white);
+}
+.todo-list {
+  flex: 1 1 0;
+  margin-top: 20px;
+  padding: 0 20px;
+  overflow-y: auto;
+  margin-bottom: 55px;
+}
+
+.todo-delete {
+  margin-left: 10px;
+}
+
+.todo-checkbox {
+  margin-right: 10px;
+}
+
+.todo-container {
+  padding: 10px 20px;
+  margin-bottom: 5px;
+  background-color: var(--white);
+  box-shadow: 0 1px 2px var(--border-color);
+  border-radius: 4px;
+}
+
+.removed {
+  text-decoration: line-through;
+  background-color: var(--removed);
+}
+
+.complete {
+  background-color: var(--complete);
+}
+
+.burger,
+.resit {
+  position: absolute;
+  top: 10px;
+  line-height: 10px;
+  padding: 5px;
+  font-size: 150%;
+  background: transparent;
+  border: 0;
+}
+
+.burger {
+  right: 10px;
+  font-size: 100%;
+  z-index: 9;
+}
+
+.new {
+  position: absolute;
+  bottom: 10px;
+  width: calc(100% - 15%);
+  max-width: 500px;
+  line-height: 5px;
+  font-size: calc(100% + 10px);
+  padding: 20px;
+  background-color: var(--add);
+  border: 0;
+  border-radius: 5px;
+  color: var(--white);
+}
+
+.shadow {
+  box-shadow: 0 1px 10px var(--shadow);
+}
+
+.dropdown {
+  position: absolute;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  padding: 20px;
+  background-color: var(--dropdown);
+  transition: all 225ms ease-in-out 225ms;
+  z-index: 8;
+}
+
+.active {
+  right: 0;
+}
