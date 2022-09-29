@@ -59,14 +59,12 @@ ul {
 
 .title {
   font-family: 'Rubik Dirt';
-  font-size: 3rem;
 }
 
 .button {
   padding: 2px 10px;
   font-family: 'Oswald';
   cursor: pointer;
-  font-size: 3rem;
 }
 
 .content {
@@ -115,7 +113,6 @@ ul {
   top: 15px;
   line-height: 10px;
   padding: 5px;
-  font-size: 2rem;
   background: transparent;
   border: 0;
 }
@@ -131,7 +128,6 @@ ul {
   width: calc(100% - 15%);
   max-width: 500px;
   line-height: 5px;
-  font-size: 2rem;
   padding: 20px;
   background-color: var(--add);
   border: 0;
@@ -159,4 +155,11 @@ ul {
 .active {
   right: 0;
   opacity: 1;
+}
+
+@media screen and (max-width: 767px) {
+  html,
+  body {
+    font-size: 1.5rem;
+  }
 }
