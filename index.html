@@ -1,30 +1,43 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="shortcut icon" href="./icon.png" type="image/x-icon">
-    <title>Todo Mind</title>
-    <link rel="stylesheet" type="text/css" href="./styles.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&family=Oswald:wght@300&display=swap" rel="stylesheet"> 
-  </head>
-  <body>
-    <div class="container center">
-      <button class="burger">&#9776;</button>
-      <div class="dropdown">
-        <ul>
-          <li><a href="./infos.html" class="link">Archive</a></li>
-        </ul>
-      </div>
-      <h1 class="center title">Todo Mind</h1>
-      <div class="flow-right controls">
-        <span>Todos: <span id="item-count">0</span></span>
-        <span>Uncomplete: <span id="unchecked-count">0</span></span>
-        <span>Removed: <span id="removed-count">0</span></span>
-      </div>
-      <ul id="todo-list" class="todo-list"></ul>
-      <button class="button reset" onclick="reset()">&#x27F3;</button>
-      <button class="button center new shadow" onclick="newTodo()">+</button>
+
+<head>
+  <link rel="shortcut icon" href="./icon.png" type="image/x-icon">
+  <title>Todo Mind</title>
+  <link rel="stylesheet" type="text/css" href="./styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&family=Oswald:wght@300&display=swap" rel="stylesheet">
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-184882806-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-184882806-1');
+  </script>
+
+</head>
+
+<body>
+  <div class="container center">
+    <button class="burger">&#9776;</button>
+    <div class="dropdown">
+      <ul>
+        <li><a href="./infos.html" class="link">Archive</a></li>
+      </ul>
     </div>
-    <script src="./script.js"></script>
-    <script src="./dropdown.js"></script>
-  </body>
+    <h1 class="center title">Todo Mind</h1>
+    <div class="flow-right controls">
+      <span>Todos: <span id="item-count">0</span></span>
+      <span>Uncomplete: <span id="unchecked-count">0</span></span>
+      <span>Removed: <span id="removed-count">0</span></span>
+    </div>
+    <ul id="todo-list" class="todo-list"></ul>
+    <button class="button reset" onclick="reset()">&#x27F3;</button>
+    <button class="button center new shadow" onclick="newTodo()">+</button>
+  </div>
+  <script src="./script.js"></script>
+  <script src="./dropdown.js"></script>
+</body>
+
 </html>

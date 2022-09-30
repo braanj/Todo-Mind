@@ -177,11 +177,10 @@ let reset = () => {
   
   if (key.toLowerCase() === 'today') {
     let list = todoList.filter(({ date }) => date != today)
-
     storeData(list)
   }
 
-  // reload()
+  reload()
 }
 
 let reload = () => { location.reload() }
