@@ -1,9 +1,9 @@
 :root {
   --bg-color: #eeeeee;
-  --white: #ffffff71;
+  --white: #ffffff63;
   --dropdown: #fffffff0;
   --black: #000;
-  --border-color: #ececec;
+  --border-color: #c8c7c7ad;
   --add: rgb(98, 183, 98);
   --shadow: rgb(194, 193, 193);
   --removed: rgba(248, 14, 14, 0.29);
@@ -73,6 +73,7 @@ ul {
   background-color: var(--white);
 }
 
+.archive-list,
 .todo-list {
   flex: 1 1 0;
   margin-top: 20px;
@@ -93,16 +94,20 @@ ul {
 
 .todo-container {
   padding: 10px 20px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   background-color: var(--white);
-  box-shadow: 0 1px 2px var(--border-color);
-  border-radius: 4px;
+  box-shadow: 0 1px 10px var(--border-color);
+  border-radius: 5px;
   display: flex;
 }
 
 .removed {
-  text-decoration: line-through;
   background-color: var(--removed);
+  padding-left: 4%;
+}
+
+.removed span {
+  text-decoration: line-through;
 }
 
 .complete {
@@ -111,14 +116,18 @@ ul {
 }
 
 .burger,
-.resit {
+.reset {
   position: absolute;
-  font-size: 2vh;
-  top: 25px;
+  font-size: 3vh;
+  top: 2vh;
   line-height: 10px;
   padding: 5px;
   background: transparent;
   border: 0;
+}
+
+.reset {
+  left: 25px;
 }
 
 .burger {
@@ -150,6 +159,7 @@ ul {
   right: -100%;
   width: 100%;
   max-width: 500px;
+  min-height: 300px;
   padding: 20px;
   background-color: var(--dropdown);
   z-index: 8;
